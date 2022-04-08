@@ -1,11 +1,10 @@
 import React from 'react'
 
-const SocialLink = ({socialIcon,socialLinkName}) => {
+const SocialLink = ({socialIcon,socialLinkName,show,setShow}) => {
   return (
-    <div className='bg-green-400 w-24 p-4 m-3 inline-block rounded-md cursor-pointer transition hover:w-48 duration-300'>
+    <div className='bg-green-400 w-16 p-4 m-3 rounded-md cursor-pointer transition-width hover:w-40 duration-300 flex gap-4' onMouseEnter={()=>{setShow(true)}} onMouseLeave={()=>{setShow(false)}}>
         <p className="text-lg text-black">{socialIcon}</p>
-        {/* <p className="text-lg text-black">{socialIcon}&nbsp;{socialLinkName}</p> */}
-        
+        <p className={`text-lg text-black transition-display duration-600 ${(!show && `hidden`)} font-bold`}>{socialLinkName}</p>
     </div>
   )
 }

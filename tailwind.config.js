@@ -18,6 +18,10 @@ module.exports = {
         tclr: withOpacityValue('--txt-color'),
         bgclr: withOpacityValue('--bkg-color'),
         // ...
+      },
+      transitionProperty: {
+        'width': 'width',
+        'display': 'display'
       }
     },
   },
