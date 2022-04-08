@@ -5,16 +5,18 @@ import SocialLink from './SocialLink';
 
 const IntroSection = () => {
 
-  const [show, setShow] = useState(false);
+  const [showGithub, setShowGithub] = useState(false);
+  const [showLinkedin, setShowLinkedin] = useState(false);
+  const [showTwitter, setShowTwitter] = useState(false);
 
   return (
     <>
       <div className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 sm:bg-red-500 md:bg-blue-500 lg:bg-green-400 xl:bg-yellow-300 flex flex-col gap-4 justify-center items-center'>
           <EmoCard/>
           <div className='flex gap-4'>
-            <SocialLink socialIcon={<FaGithub size={28} className='inline-block'/>} socialLinkName='Github' show={show} setShow={setShow}/>
-            {/* <SocialLink socialIcon={<FaLinkedin size={28} className='inline-block'/>} socialLinkName='Linked In' show={show} setShow={setShow}/>
-            <SocialLink socialIcon={<FaTwitter size={28} className='inline-block'/>} socialLinkName='Twitter' show={show} setShow={setShow}/> */}
+            <SocialLink socialIcon={<FaGithub size={28}/>} socialLinkName='Github' show={showGithub} setShow={setShowGithub} soloStyles="bg-white"/>
+            <SocialLink socialIcon={<FaLinkedin size={28}/>} socialLinkName='LinkedIn' show={showLinkedin} setShow={setShowLinkedin} soloStyles="bg-blue-600 text-white"/>
+            <SocialLink socialIcon={<FaTwitter size={28}/>} socialLinkName='Twitter' show={showTwitter} setShow={setShowTwitter} soloStyles="bg-sky-500 text-white"/>
           </div>
       </div>
 
