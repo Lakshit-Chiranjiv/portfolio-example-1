@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import IntroSection from './components/IntroSection'
+import AboutSection from './components/AboutSection'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <div className="App theme-light">
         <Navbar/>
         <IntroSection/>
+        <AboutSection/>
       </div>
     </>
   )
