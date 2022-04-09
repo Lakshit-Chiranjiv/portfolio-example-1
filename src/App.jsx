@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import IntroSection from './components/IntroSection'
 import AboutSection from './components/AboutSection'
+import SkillSection from './components/SkillSection'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <Navbar/>
         <IntroSection/>
         <AboutSection/>
+        <SkillSection/>
       </div>
     </>
   )
