@@ -1,6 +1,5 @@
 import React from 'react'
 import SkillCard from './SkillCard'
-import LangIcons from '../LangIcons'
 
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,8 +21,7 @@ const SkillSection = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
-        className="">
+        modules={[Pagination, Navigation]}>
 
           {
             pages.map((page) => {
