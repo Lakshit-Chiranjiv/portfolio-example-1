@@ -137,7 +137,7 @@ const langicons = [
         page: 2
     },
     {
-        name: 'React',
+        name: 'React JS',
         icon: <SiReact/>,
         color: 'text-sky-400',
         page: 2
