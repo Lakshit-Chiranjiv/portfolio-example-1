@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import IntroSection from './components/IntroSection'
 import AboutSection from './components/AboutSection'
 import SkillSection from './components/SkillSection'
+import ProjectSection from './components/ProjectSection'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <IntroSection/>
         <AboutSection/>
         <SkillSection/>
+        <ProjectSection/>
       </div>
     </>
   )
