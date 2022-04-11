@@ -29,7 +29,7 @@ const SkillSection = () => {
               <SwiperSlide className='flex flex-wrap justify-center items-center gap-6 swiper-slide my-10'>
                 {
                   langicons.map((lang) => {
-                    if(lang.page == page)
+                    if(lang.page === page)
                       return <SkillCard skillIcon={lang.icon} skillName={lang.name} iconColor={lang.color}/>
                   })
                 }
