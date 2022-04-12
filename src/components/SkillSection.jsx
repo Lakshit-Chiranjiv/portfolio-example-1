@@ -26,11 +26,11 @@ const SkillSection = () => {
           {
             pages.map((page) => {
               return (
-              <SwiperSlide className='flex flex-wrap justify-center items-center gap-6 swiper-slide my-10'>
+              <SwiperSlide key={page} className='flex flex-wrap justify-center items-center gap-6 swiper-slide my-10'>
                 {
                   langicons.map((lang) => {
                     if(lang.page === page)
-                      return <SkillCard skillIcon={lang.icon} skillName={lang.name} iconColor={lang.color}/>
+                      return <SkillCard key={lang.name} skillIcon={lang.icon} skillName={lang.name} iconColor={lang.color}/>
                   })
                 }
               </SwiperSlide>
