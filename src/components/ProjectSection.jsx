@@ -25,11 +25,11 @@ const ProjectSection = () => {
         modules={[Pagination, Navigation]}>
             {
               pages.map((page) => {
-                return (<SwiperSlide className='flex flex-wrap justify-center items-center gap-8 swiper-slide my-10'>
+                return (<SwiperSlide key={page} className='flex flex-wrap justify-center items-center gap-8 swiper-slide my-10'>
                     {
                       projectData.map((project) => {
                         if(project.page === page){
-                          return <ProjectCard projectName={project.name} projectType={project.type} projectTechs={project.techs} projectDeployLink={project.deploy} projectRepoLink={project.repo}/>
+                          return <ProjectCard key={project.name} projectName={project.name} projectType={project.type} projectTechs={project.techs} projectDeployLink={project.deploy} projectRepoLink={project.repo}/>
                         }
                       })
                     }
