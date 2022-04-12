@@ -14,7 +14,7 @@ const ContactSection = () => {
 
         <div className='text-center mt-6'>
             <p>-Created by Lakshit Chiranjiv Sagar using the Tailwind|React Jutsu 🍥✨</p>
-            <p className="text-sm mt-4 text-slate-600">&copy; 2022 ,Lakshit,India. All rights reserved.</p>
+            <p className="text-sm mt-4 text-slate-600">&copy; 2022 | Lakshit,India. | All rights reserved.</p>
         </div>
     </div>
   )
