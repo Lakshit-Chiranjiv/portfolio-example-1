@@ -9,11 +9,11 @@ import ProjectCard from './ProjectCard';
 import projectData from '../ProjectsData';
 
 
-const ProjectSection = () => {
+const ProjectSection = ({projectsRef}) => {
 
   let pages = [1,2,3];
   return (
-    <div id='projects' className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-pink-200'>
+    <div ref={projectsRef} id='projects' className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-pink-200'>
         <h1 className="font-bold text-4xl my-6 mb-10 text-center">My Projects</h1>
 
         <Swiper 
