@@ -8,12 +8,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import langicons from '../LangIcons';
 
-const SkillSection = () => {
+const SkillSection = ({skillsRef}) => {
 
    let pages = [1,2];
 
   return (
-    <div id='skills' className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-emerald-200'>
+    <div ref={skillsRef} id='skills' className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-emerald-200'>
       <h1 className="font-bold text-4xl my-6 mb-10 text-center">My Skills</h1>
       <Swiper 
         loop={true}
