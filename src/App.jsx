@@ -5,18 +5,25 @@ import AboutSection from './components/AboutSection'
 import SkillSection from './components/SkillSection'
 import ProjectSection from './components/ProjectSection'
 import ContactSection from './components/ContactSection'
+import { useRef } from 'react'
 
 function App() {
+
+  const introRef = useRef()
+  const aboutRef = useRef()
+  const skillsRef = useRef()
+  const projectsRef = useRef()
+  const contactRef = useRef()
 
   return (
     <>
       <div className="App theme-light">
-        <Navbar/>
-        <IntroSection/>
-        <AboutSection/>
-        <SkillSection/>
-        <ProjectSection/>
-        <ContactSection/>
+        <Navbar introRef={introRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef}/>
+        <IntroSection introRef={introRef}/>
+        <AboutSection aboutRef={aboutRef}/>
+        <SkillSection skillsRef={skillsRef}/>
+        <ProjectSection projectsRef={projectsRef}/>
+        <ContactSection contactRef={contactRef}/>
       </div>
     </>
   )
