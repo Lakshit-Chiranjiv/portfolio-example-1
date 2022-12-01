@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <div className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-blue-400'>
+    <div id='about' className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-blue-400'>
         <h1 className="font-bold text-4xl my-6">About Me</h1>
         <p className='text-base'>Hey There!!👋 I am a Full Stack Web Developer. Like to learn new technologies and create something of my own using them. Also have some experience with Blockchain Development and Android Development. 
         <br /><br />

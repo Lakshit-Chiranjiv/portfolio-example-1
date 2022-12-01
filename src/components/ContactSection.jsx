@@ -4,7 +4,7 @@ import {FaGithub,FaLinkedin,FaTwitter} from "react-icons/fa";
 
 const ContactSection = () => {
   return (
-    <div className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-violet-300'>
+    <div id='contact' className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 pt-4 bg-violet-300'>
         <div className="flex gap-12 text-2xl justify-center">
             <a href="#" className='hover:scale-125 transition duration-200'><FaGithub/></a>
             <a href="#" className='text-blue-600 hover:scale-125 transition duration-200'><FaLinkedin/></a>

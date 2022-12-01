@@ -11,7 +11,7 @@ const IntroSection = () => {
 
   return (
     <>
-      <div className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 sm:bg-red-500 md:bg-blue-500 lg:bg-green-400 xl:bg-yellow-300 flex flex-col gap-4 justify-center items-center'>
+      <div id='intro' className='bg-bgclr w-11/12 m-10 mx-auto rounded-md p-8 sm:bg-red-500 md:bg-blue-500 lg:bg-green-400 xl:bg-yellow-300 flex flex-col gap-4 justify-center items-center'>
           <EmoCard/>
           <div className='flex gap-4'>
             <SocialLink socialIcon={<FaGithub size={28}/>} socialLinkName='Github' show={showGithub} setShow={setShowGithub} soloStyles="bg-white" linkTo="https://github.com/Lakshit-Chiranjiv"/>
