@@ -32,10 +32,10 @@ const ProjectCard = ({projectName,projectType,projectTechs,projectDeployLink,pro
   }
 
   return (
-    <div className='h-64 w-1/3 rounded-lg bg-slate-700 text-white flex flex-col gap-4 justify-center items-center shadow-lg shadow-gray-500 hover:scale-105 transition duration-300 p-20'>
+    <div className='w-1/3 rounded-lg bg-slate-700 text-white flex flex-col gap-4 justify-center items-center shadow-lg shadow-gray-500 hover:scale-105 transition duration-300 p-20'>
         <img src={projectImg} alt="landpage" className='max-h-32 max-w-full h-auto w-auto'/>
         <p>{projectName}</p>
-        <div className='flex gap-12 items-center text-black'>
+        <div className='flex flex-col xl:flex-row gap-12 items-center text-black'>
             <a href={projectDeployLink} className='bg-blue-300 p-2 px-14 rounded hover:bg-blue-200 transition duration-200'><FiExternalLink/></a>
             <a href={projectRepoLink} className='bg-yellow-300 p-2 px-14 rounded hover:bg-yellow-200 transition duration-200'><FaLaptopCode/></a>
         </div>
